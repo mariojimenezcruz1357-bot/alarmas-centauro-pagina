@@ -110,12 +110,7 @@
         <section class="contact-bottom container" aria-labelledby="contact-bottom-title">
             <h3 id="contact-bottom-title">¿Quieres más información? Contáctanos</h3>
             <p class="text-muted">Rellena el formulario y te responderemos en menos de 24 horas. También puedes llamarnos al <strong>+34 667 942 136</strong>.</p>
-            <form action="https://formsubmit.co/alarmascentauro1@gmail.com" method="POST">
-                <!-- Configuración FormSubmit -->
-                <input type="hidden" name="_next" value="gracias.html">
-                <input type="hidden" name="_subject" value="Nuevo mensaje desde Alarmas Centauro">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_template" value="table">
+            <form id="contacto-form-inicio">
                 <div class="grid">
                     <input name="nombre" type="text" placeholder="Nombre completo" required>
                     <input name="telefono" type="tel" placeholder="Teléfono" required>
@@ -146,20 +141,6 @@
         </div>
     </footer>
 
-    <script>
-        // Forzar redireccion a gracias.html despues del envio
-        document.addEventListener('DOMContentLoaded', function() {
-            const form = document.querySelector('.contact-bottom form');
-            if (form) {
-                form.addEventListener('submit', function(e) {
-                    // Permitir el envio normal del formulario
-                    // pero forzar redireccion despues de un breve delay
-                    setTimeout(function() {
-                        window.location.href = 'gracias.html';
-                    }, 1000);
-                });
-            }
-        });
-    </script>
+    <script src="scripts/form-submit.js"></script>
 </body>
 </html>
