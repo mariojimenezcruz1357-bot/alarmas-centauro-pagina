@@ -1,3 +1,4 @@
+// Actualizado: Manejo unificado de formularios contacto.html e index.html
 // Este archivo maneja la lógica de envío del formulario de contacto
 
 // Función reutilizable para manejar el envío de formularios
