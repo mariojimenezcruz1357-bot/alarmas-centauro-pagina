@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Alarmas Centauro</title>
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/global.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo-link">
+                <img src="../../images/galeria/logo.png" alt="Alarmas Centauro" class="logo-img">
+                <h1 class="logo">Alarmas Centauro</h1>
+            </a>
+            <nav class="main-nav">
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="productos.html">Productos</a>
+                <a href="quienes-somos.html">Quiénes Somos</a>
+                <a href="galeria.html">Galería</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-info container">
+            <h2>Contacto</h2>
+            <p>Teléfono: <a href="tel:+34667942136">+34 667 942 136</a></p>
+            <p>Email: <a href="mailto:alarmascentauro1@gmail.com">alarmascentauro1@gmail.com</a></p>
+            <p>¿Interesado en una visita técnica? <a href="#contact-form" class="btn-secondary">Pedir visita</a></p>
+        </section>
+
+        <section id="contact-form" class="contact-form container">
+            <h3>¿Quieres más información? Contáctanos</h3>
+            <p class="text-muted">Rellena el formulario y te responderemos en menos de 24 horas.</p>
+            <form id="contacto-form">
+                <div class="grid">
+                    <input name="nombre" type="text" placeholder="Nombre completo" required>
+                    <input name="telefono" type="tel" placeholder="Teléfono" required>
+                    <input name="email" type="email" placeholder="Email" class="full" required>
+                    <div class="fancy-select" aria-hidden="false">
+                      <select name="asunto" aria-label="Asunto">
+                        <option value="">Selecciona asunto (opcional)</option>
+                        <option value="presupuesto">💼 Solicitar presupuesto</option>
+                        <option value="soporte">🛠️ Soporte técnico</option>
+                        <option value="instalacion">🔧 Instalación</option>
+                        <option value="mantenimiento">🔁 Mantenimiento</option>
+                        <option value="otros">💬 Otros</option>
+                      </select>
+                    </div>
+                    <textarea name="mensaje" rows="5" placeholder="Cuéntanos tu consulta..." class="full" required></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="reset" class="btn-secondary">Limpiar</button>
+                    <button type="submit" class="btn-primary">Enviar mensaje</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© Alarmas Centauro — Seguridad y tranquilidad</p>
+        </div>
+    </footer>
+
+    <script src="scripts/form-submit.js"></script>
+</body>
+</html>
